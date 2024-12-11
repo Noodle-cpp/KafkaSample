@@ -8,7 +8,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="90db5c02-b65b-4042-b718-3a1c9afd4e63" name="Changes" comment="Определена структура проекта" />
+    <list default="true" id="90db5c02-b65b-4042-b718-3a1c9afd4e63" name="Changes" comment="Unversioned files">
+      <change afterPath="$PROJECT_DIR$/src/core/Application/Abstractions/Interfaces/IBookService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/core/Application/Exceptions/BookNotFoundException.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/core/Application/Services/BookService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/core/Domain/Abstractions/BaseEntity.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/core/Domain/Abstractions/Interfaces/IBookRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/core/Domain/Entities/Author.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/core/Domain/Entities/Book.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/external/Infrastructure/Repositories/BookRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/presentation/Api/ViewModels/Responses/AuthorResponse.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/presentation/Api/ViewModels/Responses/BookResponse.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.KafkaSample/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.KafkaSample/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/Domain/Domain.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/Domain/Domain.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/external/Infrastructure/Infrastructure.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/external/Infrastructure/Infrastructure.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentation/Api/Api.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/Api/Api.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentation/Api/Controllers/WeatherForecastController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentation/Api/WeatherForecast.cs" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,6 +34,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Noodle-cpp"
+  }
+}]]></component>
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
     "url": "git@github.com:Noodle-cpp/KafkaSample.git",
@@ -43,7 +66,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "settings.editor.selected.configurable": "editor.preferences.smartKeys_rider",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -87,7 +110,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1733891190965</updated>
-      <workItem from="1733891195736" duration="5499000" />
+      <workItem from="1733891195736" duration="7522000" />
     </task>
     <task id="LOCAL-00001" summary="Определена структура проекта">
       <option name="closed" value="true" />
@@ -97,7 +120,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733898659475</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Unversioned files">
+      <option name="closed" value="true" />
+      <created>1733899002518</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1733899002518</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -119,6 +150,7 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Определена структура проекта" />
-    <option name="LAST_COMMIT_MESSAGE" value="Определена структура проекта" />
+    <MESSAGE value="Unversioned files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Unversioned files" />
   </component>
 </project>
