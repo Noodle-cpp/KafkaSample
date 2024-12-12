@@ -1,7 +1,7 @@
 using Domain.Abstractions.Interfaces;
 using Domain.Entities;
 
-namespace Infrastructure.Repositories;
+namespace Persistence.Repositories;
 
 public class BookRepository : IBookRepository
 {
