@@ -8,28 +8,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="90db5c02-b65b-4042-b718-3a1c9afd4e63" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/core/Domain/Abstractions/Interfaces/IKafkaConsumer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/Domain/Abstractions/Interfaces/IKafkaProducer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/external/Infrastructure/KafkaBroker/KafkaConsumer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/external/Infrastructure/KafkaBroker/KafkaProducer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/presentation/Api/BackgroundServices/KafkaConsumerHostedService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/presentation/Api/Controllers/ProducersController.cs" afterDir="false" />
+    <list default="true" id="90db5c02-b65b-4042-b718-3a1c9afd4e63" name="Changes" comment="Добавлен фоновый кафка консумер">
+      <change afterPath="$PROJECT_DIR$/src/external/Persistence/TestDbContext.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.KafkaSample/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.KafkaSample/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/Application/Abstractions/Interfaces/IBookService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/Application/Abstractions/Interfaces/IBookService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/Application/Extensions/AddApplicationServiceRegistration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/Application/Extensions/AddApplicationServiceRegistration.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/Application/Services/BookService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/Application/Services/BookService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/core/Domain/Abstractions/BaseEntity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/Domain/Abstractions/BaseEntity.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/Domain/Abstractions/Interfaces/IBookRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/Domain/Abstractions/Interfaces/IBookRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/Domain/Abstractions/Interfaces/IMessageBus.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/external/DependencyResolver/DependencyContainer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/external/DependencyResolver/DependencyContainer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/external/Infrastructure/Extensions/AddInfrastructureServiceRegistration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/external/Infrastructure/Extensions/AddInfrastructureServiceRegistration.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/external/Infrastructure/Infrastructure.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/external/Infrastructure/Infrastructure.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/external/Infrastructure/Services/MessageBus.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/Domain/Domain.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/Domain/Domain.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/Domain/Entities/Author.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/Domain/Entities/Author.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/Domain/Entities/Book.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/Domain/Entities/Book.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/external/Persistence/Extensions/AddPersistenceServiceRegistration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/external/Persistence/Extensions/AddPersistenceServiceRegistration.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/external/Persistence/Repositories/BookRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/external/Persistence/Repositories/BookRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/presentation/Api/Api.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/Api/Api.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/presentation/Api/Controllers/BooksController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/Api/Controllers/BooksController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/presentation/Api/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/Api/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/presentation/Api/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/Api/appsettings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -125,7 +112,7 @@
       <updated>1733891190965</updated>
       <workItem from="1733891195736" duration="7962000" />
       <workItem from="1733976262518" duration="6092000" />
-      <workItem from="1734055070765" duration="15909000" />
+      <workItem from="1734055070765" duration="18401000" />
     </task>
     <task id="LOCAL-00001" summary="Определена структура проекта">
       <option name="closed" value="true" />
@@ -159,7 +146,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733997208157</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Добавлен фоновый кафка консумер">
+      <option name="closed" value="true" />
+      <created>1734075897479</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1734075897479</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -184,6 +179,7 @@
     <MESSAGE value="Unversioned files" />
     <MESSAGE value="Добавлены book файлы структуры" />
     <MESSAGE value="Добавлен MessageBus для Kafka" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавлен MessageBus для Kafka" />
+    <MESSAGE value="Добавлен фоновый кафка консумер" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавлен фоновый кафка консумер" />
   </component>
 </project>

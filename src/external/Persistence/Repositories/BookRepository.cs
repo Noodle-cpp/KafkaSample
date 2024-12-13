@@ -1,13 +1,22 @@
 using Domain.Abstractions.Interfaces;
 using Domain.Entities;
+using LinqToDB;
+using LinqToDB.Tools;
 
 namespace Persistence.Repositories;
 
 public class BookRepository : IBookRepository
 {
-    public Task<IEnumerable<Book>> GetAllBooksAsync()
+    private readonly TestDbContext _context;
+
+    public BookRepository(TestDbContext context)
     {
-        throw new NotImplementedException();
+        _context = context;
+    }
+    
+    public async Task<IEnumerable<Book>> GetAllBooksAsync()
+    {
+        return await _context.Books.ToListAsync().ConfigureAwait(false);
     }
 
     public Task CreateBookAsync(Book book)
