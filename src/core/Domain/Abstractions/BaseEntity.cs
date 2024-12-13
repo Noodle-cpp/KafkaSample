@@ -2,5 +2,5 @@ namespace Domain.Abstractions;
 
 public abstract class BaseEntity
 {
-    public Guid Id { get; protected set; } = Guid.NewGuid();
+    public Guid Id { get; init; } = Guid.NewGuid();
 }

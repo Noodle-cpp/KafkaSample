@@ -9,4 +9,9 @@ public class BookRepository : IBookRepository
     {
         throw new NotImplementedException();
     }
+
+    public Task CreateBookAsync(Book book)
+    {
+        throw new NotImplementedException();
+    }
 }
