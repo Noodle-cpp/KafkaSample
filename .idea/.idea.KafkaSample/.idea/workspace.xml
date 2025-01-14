@@ -8,15 +8,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="90db5c02-b65b-4042-b718-3a1c9afd4e63" name="Changes" comment="Добавлен фоновый кафка консумер">
-      <change afterPath="$PROJECT_DIR$/src/external/Persistence/TestDbContext.cs" afterDir="false" />
+    <list default="true" id="90db5c02-b65b-4042-b718-3a1c9afd4e63" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/core/Domain/Abstractions/Interfaces/IRepository.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.KafkaSample/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.KafkaSample/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/Domain/Abstractions/BaseEntity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/Domain/Abstractions/BaseEntity.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/Application/Services/BookService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/Application/Services/BookService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/core/Domain/Domain.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/Domain/Domain.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/core/Domain/Entities/Author.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/Domain/Entities/Author.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/core/Domain/Entities/Book.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/Domain/Entities/Book.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/external/Persistence/Extensions/AddPersistenceServiceRegistration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/external/Persistence/Extensions/AddPersistenceServiceRegistration.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/external/Persistence/Persistence.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/external/Persistence/Persistence.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/external/Persistence/Repositories/BookRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/external/Persistence/Repositories/BookRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/external/Persistence/TestDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/external/Persistence/TestDbContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentation/Api/Api.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/Api/Api.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentation/Api/Controllers/BooksController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/Api/Controllers/BooksController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentation/Api/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/Api/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentation/Api/ViewModels/Responses/AuthorResponse.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/Api/ViewModels/Responses/AuthorResponse.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentation/Api/ViewModels/Responses/BookResponse.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/Api/ViewModels/Responses/BookResponse.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/presentation/Api/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/Api/appsettings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,7 +50,9 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0b7856b364e04283a10bb924825b197f28f228/ac/8cfde75f/IDesignTimeDbContextFactory`1.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0e3d5462920846549f6d7044ba86da286ca00/e6/ab1342d5/IConsumer`2.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Valentine/source/repos/KafkaSample/src/presentation/Api/Program.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -112,7 +121,9 @@
       <updated>1733891190965</updated>
       <workItem from="1733891195736" duration="7962000" />
       <workItem from="1733976262518" duration="6092000" />
-      <workItem from="1734055070765" duration="18401000" />
+      <workItem from="1734055070765" duration="18522000" />
+      <workItem from="1734592822209" duration="336000" />
+      <workItem from="1736834489857" duration="7247000" />
     </task>
     <task id="LOCAL-00001" summary="Определена структура проекта">
       <option name="closed" value="true" />
@@ -154,7 +165,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734075897479</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Добавлено подключение к БД">
+      <option name="closed" value="true" />
+      <created>1734078783858</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1734078783858</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -180,6 +199,26 @@
     <MESSAGE value="Добавлены book файлы структуры" />
     <MESSAGE value="Добавлен MessageBus для Kafka" />
     <MESSAGE value="Добавлен фоновый кафка консумер" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавлен фоновый кафка консумер" />
+    <MESSAGE value="Добавлено подключение к БД" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавлено подключение к БД" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/src/presentation/Api/Controllers/BooksController.cs</url>
+          <line>28</line>
+          <properties documentPath="C:\Users\Valentine\source\repos\KafkaSample\src\presentation\Api\Controllers\BooksController.cs" containingFunctionPresentation="Method 'GetBooksAsync'">
+            <startOffsets>
+              <option value="804" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1199" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

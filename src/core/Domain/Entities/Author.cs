@@ -3,7 +3,7 @@ using LinqToDB.Mapping;
 
 namespace Domain.Entities;
 
-[Table("Authors")]
+[Table("Author")]
 public class Author : BaseEntity
 {
     [Column, NotNull]

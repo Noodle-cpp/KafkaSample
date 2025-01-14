@@ -3,6 +3,7 @@ using LinqToDB.Mapping;
 
 namespace Domain.Entities;
 
+[Table("Book")]
 public class Book : BaseEntity
 {
     [Column, NotNull]

@@ -7,15 +7,17 @@ namespace Application.Services;
 public class BookService : IBookService
 {
     private readonly IKafkaProducer _producer;
+    private readonly IBookRepository _bookRepository;
     
-    public BookService(IKafkaProducer producer, IKafkaConsumer consumer)
+    public BookService(IKafkaProducer producer, IKafkaConsumer consumer, IBookRepository bookRepository)
     {
         _producer = producer;
+        _bookRepository = bookRepository;
     }
     
     public async Task<IEnumerable<Book>> GetAllBooksAsync()
     {
-        return new List<Book>();
+        return await _bookRepository.GetAllBooksAsync().ConfigureAwait(false);
     }
 
     public async Task CreateBookAsync(Book book)

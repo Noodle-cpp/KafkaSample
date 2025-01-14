@@ -2,8 +2,8 @@ namespace Api.ViewModels.Responses;
 
 public class BookResponse
 {
-    public Guid Id { get; private set; }
-    public string Title { get; private set; }
-    public Guid AuthorId { get; private set; }
-    public AuthorResponse Author { get; private set; }
+    public Guid Id { get; init; }
+    public string Title { get; init; } = string.Empty;
+    public Guid AuthorId { get; init; }
+    public AuthorResponse Author { get; init; } = new();
 }

@@ -11,6 +11,6 @@ public class TestDbContext : DataConnection
 
     }
     
-    public ITable<Book> Books => this.GetTable<Book>();
-    public ITable<Author> Authors => this.GetTable<Author>();
+    public ITable<Book> Book => this.GetTable<Book>();
+    public ITable<Author> Author => this.GetTable<Author>();
 }

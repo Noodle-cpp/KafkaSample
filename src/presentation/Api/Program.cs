@@ -1,6 +1,7 @@
 using Api.BackgroundServices;
 using DependencyResolver;
 using Infrastructure.Commons;
+using Persistence;
 
 const string _corsPolicy = "EnableAll";
 var builder = WebApplication.CreateBuilder(args);

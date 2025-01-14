@@ -1,7 +1,6 @@
 using Domain.Abstractions.Interfaces;
 using Domain.Entities;
-using LinqToDB;
-using LinqToDB.Tools;
+using Microsoft.EntityFrameworkCore;
 
 namespace Persistence.Repositories;
 
@@ -16,7 +15,21 @@ public class BookRepository : IBookRepository
     
     public async Task<IEnumerable<Book>> GetAllBooksAsync()
     {
-        return await _context.Books.ToListAsync().ConfigureAwait(false);
+        return await _context.Book
+            .Join(_context.Author,
+                book => book.AuthorId,
+                author => author.Id,
+                (book, author) => new Book
+                {
+                    Id = book.Id,
+                    Title = book.Title,
+                    AuthorId = book.AuthorId,
+                    Author = author
+                }
+            )
+            .ToListAsync().ConfigureAwait(false);
+        // return await _context.Book.Include(x => x.Author)
+        //                           .ToListAsync().ConfigureAwait(false);
     }
 
     public Task CreateBookAsync(Book book)

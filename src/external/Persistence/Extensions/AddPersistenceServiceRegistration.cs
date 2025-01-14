@@ -14,8 +14,10 @@ public static class AddPersistenceServiceRegistration
     public static IServiceCollection AddPersistenceServices(this IServiceCollection services,
         IConfiguration configuration)
     {
+        var dbConfiguration = configuration.GetConnectionString("Postgres") ?? throw new ArgumentNullException(nameof(configuration));
+        
         services.AddLinqToDBContext<TestDbContext>((provider, options)
-            => options.UsePostgreSQL(configuration.GetConnectionString("Default")).UseDefaultLogging(provider));
+            => options.UsePostgreSQL(dbConfiguration).UseDefaultLogging(provider));
 
         services.AddScoped<IBookRepository, BookRepository>();
         
