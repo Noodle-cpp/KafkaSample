@@ -8,18 +8,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="90db5c02-b65b-4042-b718-3a1c9afd4e63" name="Changes" comment="+">
-      <change afterPath="$PROJECT_DIR$/src/external/Persistence/Migrations/0001_CreateTestTable.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/external/Persistence/Migrations/0002_AlterTestTable.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.KafkaSample/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.KafkaSample/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/external/Persistence/Entities/Author.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/external/Persistence/Entities/Author.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/external/Persistence/Entities/Book.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/external/Persistence/Entities/Book.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/external/Persistence/Entities/TestDbdb.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/external/Persistence/Entities/TestDbdb.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/external/Persistence/Extensions/AddPersistenceServiceRegistration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/external/Persistence/Extensions/AddPersistenceServiceRegistration.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/external/Persistence/Persistence.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/external/Persistence/Persistence.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/external/Persistence/TestDbContext.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/presentation/Api/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/Api/appsettings.json" afterDir="false" />
-    </list>
+    <list default="true" id="90db5c02-b65b-4042-b718-3a1c9afd4e63" name="Changes" comment="Добавлена миграция DbUp" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -197,7 +186,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738221078909</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Добавлена миграция DbUp">
+      <option name="closed" value="true" />
+      <created>1738226378359</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1738226378359</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -226,6 +223,7 @@
     <MESSAGE value="Добавлено подключение к БД" />
     <MESSAGE value="Тест linq2db scaffold &#10;Удалены ссылки и классы для чистой архитектуры" />
     <MESSAGE value="+" />
-    <option name="LAST_COMMIT_MESSAGE" value="+" />
+    <MESSAGE value="Добавлена миграция DbUp" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавлена миграция DbUp" />
   </component>
 </project>

@@ -37,8 +37,10 @@ namespace Persistence
 
 		partial void InitDataContext();
 
-		public ITable<Author> Authors => this.GetTable<Author>();
-		public ITable<Book>   Books   => this.GetTable<Book>();
+		public ITable<Author>        Authors        => this.GetTable<Author>();
+		public ITable<Book>          Books          => this.GetTable<Book>();
+		public ITable<Schemaversion> Schemaversions => this.GetTable<Schemaversion>();
+		public ITable<User>          Users          => this.GetTable<User>();
 	}
 
 	public static partial class ExtensionMethods
@@ -62,6 +64,16 @@ namespace Persistence
 		public static Task<Book?> FindAsync(this ITable<Book> table, string id, CancellationToken cancellationToken = default)
 		{
 			return table.FirstOrDefaultAsync(e => e.Id == id, cancellationToken);
+		}
+
+		public static Schemaversion? Find(this ITable<Schemaversion> table, int schemaversionsid)
+		{
+			return table.FirstOrDefault(e => e.Schemaversionsid == schemaversionsid);
+		}
+
+		public static Task<Schemaversion?> FindAsync(this ITable<Schemaversion> table, int schemaversionsid, CancellationToken cancellationToken = default)
+		{
+			return table.FirstOrDefaultAsync(e => e.Schemaversionsid == schemaversionsid, cancellationToken);
 		}
 		#endregion
 	}
