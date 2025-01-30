@@ -1,0 +1,2 @@
+ALTER TABLE Public.Users
+    ADD COLUMN Id VARCHAR(50);

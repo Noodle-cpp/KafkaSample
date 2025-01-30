@@ -5,11 +5,8 @@
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
     </PropertyGroup>
-
+    
     <ItemGroup>
-        <PackageReference Include="linq2db" Version="6.0.0-preview.1" />
-        <PackageReference Include="linq2db.AspNet" Version="5.4.1" />
-        <PackageReference Include="linq2db.EntityFrameworkCore" Version="9.0.0" />
         <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.0"/>
         <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.0" />
         <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.0">
@@ -29,6 +26,7 @@
     <ItemGroup>
       <Folder Include="Controllers\" />
       <Folder Include="ViewModels\Requests\" />
+      <Folder Include="ViewModels\Responses\" />
     </ItemGroup>
 
 </Project>

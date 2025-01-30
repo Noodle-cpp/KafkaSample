@@ -1,11 +1,11 @@
+using System.Reflection;
+using DbUp;
 using Domain.Abstractions.Interfaces;
 using LinqToDB;
 using LinqToDB.AspNet;
 using LinqToDB.AspNet.Logging;
-using LinqToDB.Common;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Persistence.Repositories;
 
 namespace Persistence.Extensions;
 
@@ -15,12 +15,42 @@ public static class AddPersistenceServiceRegistration
         IConfiguration configuration)
     {
         var dbConfiguration = configuration.GetConnectionString("Postgres") ?? throw new ArgumentNullException(nameof(configuration));
-        
-        services.AddLinqToDBContext<TestDbContext>((provider, options)
-            => options.UsePostgreSQL(dbConfiguration).UseDefaultLogging(provider));
 
-        services.AddScoped<IBookRepository, BookRepository>();
+        Migrate(dbConfiguration);
+
+        services.AddLinqToDBContext<TestDbdb>((provider, options)
+            => options.UsePostgreSQL(dbConfiguration).UseDefaultLogging(provider));
         
         return services;
+    }
+
+    private static void Migrate(string connectionString)
+    {
+        // Проверяем и создаем базу данных, если она не существует
+        EnsureDatabase.For.PostgresqlDatabase(connectionString);
+
+        // Настройка DbUp
+        var upgrader =
+            DeployChanges.To
+                .PostgresqlDatabase(connectionString)
+                .WithScriptsEmbeddedInAssembly(Assembly.GetExecutingAssembly()) // Используем скрипты из сборки
+                .LogToConsole() // Логируем в консоль
+                .Build();
+
+        // Применяем миграции
+        var result = upgrader.PerformUpgrade();
+
+        // Обработка результата
+        if (!result.Successful)
+        {
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine(result.Error);
+            Console.ResetColor();
+            throw result.Error;
+        }
+
+        Console.ForegroundColor = ConsoleColor.Green;
+        Console.WriteLine("Миграции успешно применены!");
+        Console.ResetColor();
     }
 }
