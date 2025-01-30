@@ -8,27 +8,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="90db5c02-b65b-4042-b718-3a1c9afd4e63" name="Changes" comment="">
+    <list default="true" id="90db5c02-b65b-4042-b718-3a1c9afd4e63" name="Changes" comment="+">
+      <change afterPath="$PROJECT_DIR$/src/external/Persistence/Migrations/0001_CreateTestTable.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/external/Persistence/Migrations/0002_AlterTestTable.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.KafkaSample/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.KafkaSample/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/Application/Abstractions/Interfaces/IBookService.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/Application/Application.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/Application/Application.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/Application/Extensions/AddApplicationServiceRegistration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/Application/Extensions/AddApplicationServiceRegistration.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/Application/Services/BookService.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/Domain/Abstractions/BaseEntity.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/Domain/Abstractions/Interfaces/IBookRepository.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/Domain/Abstractions/Interfaces/IRepository.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/Domain/Domain.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/Domain/Domain.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/Domain/Entities/Author.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/Domain/Entities/Book.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/external/Persistence/Entities/Author.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/external/Persistence/Entities/Author.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/external/Persistence/Entities/Book.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/external/Persistence/Entities/Book.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/external/Persistence/Entities/TestDbdb.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/external/Persistence/Entities/TestDbdb.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/external/Persistence/Extensions/AddPersistenceServiceRegistration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/external/Persistence/Extensions/AddPersistenceServiceRegistration.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/external/Persistence/Persistence.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/external/Persistence/Persistence.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/external/Persistence/Repositories/BookRepository.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/external/Persistence/TestDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/external/Persistence/TestDbContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/presentation/Api/Api.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/Api/Api.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/presentation/Api/Controllers/BooksController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/presentation/Api/Controllers/ProducersController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/presentation/Api/ViewModels/Responses/AuthorResponse.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/presentation/Api/ViewModels/Responses/BookResponse.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/external/Persistence/TestDbContext.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentation/Api/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/Api/appsettings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +44,9 @@
     &quot;assignee&quot;: &quot;Noodle-cpp&quot;
   }
 }</component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="9a64320d-7490-4871-80b0-b728ca49acad" />
+  </component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;git@github.com:Noodle-cpp/KafkaSample.git&quot;,
@@ -79,21 +72,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;.NET Launch Settings Profile.Api: http.executor&quot;: &quot;Debug&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.smartKeys_rider&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Launch Settings Profile.Api: http.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "test",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected=".NET Launch Settings Profile.Api: http">
     <configuration name="Api: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/src/presentation/Api/Api.csproj" />
@@ -188,7 +181,23 @@
       <option name="project" value="LOCAL" />
       <updated>1734078783858</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Тест linq2db scaffold &#10;Удалены ссылки и классы для чистой архитектуры">
+      <option name="closed" value="true" />
+      <created>1738221006606</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1738221006606</updated>
+    </task>
+    <task id="LOCAL-00008" summary="+">
+      <option name="closed" value="true" />
+      <created>1738221078909</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1738221078909</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -215,6 +224,8 @@
     <MESSAGE value="Добавлен MessageBus для Kafka" />
     <MESSAGE value="Добавлен фоновый кафка консумер" />
     <MESSAGE value="Добавлено подключение к БД" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавлено подключение к БД" />
+    <MESSAGE value="Тест linq2db scaffold &#10;Удалены ссылки и классы для чистой архитектуры" />
+    <MESSAGE value="+" />
+    <option name="LAST_COMMIT_MESSAGE" value="+" />
   </component>
 </project>

@@ -7,6 +7,8 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <PackageReference Include="dbup" Version="5.0.41" />
+      <PackageReference Include="dbup-postgresql" Version="6.0.0-beta.44" />
       <PackageReference Include="linq2db" Version="6.0.0-preview.3" />
       <PackageReference Include="linq2db.AspNet" Version="5.4.1" />
       <PackageReference Include="linq2db.EntityFrameworkCore" Version="9.1.0-preview.3" />
@@ -21,8 +23,16 @@
     <ItemGroup>
       <Folder Include="Abstractions\Interfaces\" />
       <Folder Include="Entities\" />
-      <Folder Include="Migrations\" />
       <Folder Include="Repositories\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Migrations\0001_CreateTestTable.sql" />
+      <EmbeddedResource Include="Migrations\0001_CreateTestTable.sql">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </EmbeddedResource>
+      <None Remove="Migrations\0002_AlterTestTable.sql" />
+      <EmbeddedResource Include="Migrations\0002_AlterTestTable.sql" />
     </ItemGroup>
 
 </Project>
