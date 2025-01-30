@@ -7,9 +7,9 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="linq2db" Version="6.0.0-preview.1" />
+      <PackageReference Include="linq2db" Version="6.0.0-preview.3" />
       <PackageReference Include="linq2db.AspNet" Version="5.4.1" />
-      <PackageReference Include="linq2db.EntityFrameworkCore" Version="9.0.0" />
+      <PackageReference Include="linq2db.EntityFrameworkCore" Version="9.1.0-preview.3" />
       <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="9.0.0" />
       <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.0" />
     </ItemGroup>
@@ -20,6 +20,9 @@
 
     <ItemGroup>
       <Folder Include="Abstractions\Interfaces\" />
+      <Folder Include="Entities\" />
+      <Folder Include="Migrations\" />
+      <Folder Include="Repositories\" />
     </ItemGroup>
 
 </Project>

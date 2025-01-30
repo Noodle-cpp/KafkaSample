@@ -1,4 +1,3 @@
-using Domain.Entities;
 using LinqToDB;
 using LinqToDB.Data;
 
@@ -10,7 +9,4 @@ public class TestDbContext : DataConnection
     {
 
     }
-    
-    public ITable<Book> Book => this.GetTable<Book>();
-    public ITable<Author> Author => this.GetTable<Author>();
 }
