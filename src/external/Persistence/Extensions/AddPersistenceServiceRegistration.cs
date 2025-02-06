@@ -12,7 +12,7 @@ namespace Persistence.Extensions;
 public static class AddPersistenceServiceRegistration
 {
     public static IServiceCollection AddPersistenceServices(this IServiceCollection services,
-        IConfiguration configuration)
+                                                            IConfiguration configuration)
     {
         var dbConfiguration = configuration.GetConnectionString("Postgres") ?? throw new ArgumentNullException(nameof(configuration));
 
@@ -21,6 +21,8 @@ public static class AddPersistenceServiceRegistration
         services.AddLinqToDBContext<TestDbdb>((provider, options)
             => options.UsePostgreSQL(dbConfiguration).UseDefaultLogging(provider));
         
+        services.AddAutoMapper(Assembly.GetExecutingAssembly());
+
         return services;
     }
 

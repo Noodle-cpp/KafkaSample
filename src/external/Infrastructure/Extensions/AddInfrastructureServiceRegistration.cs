@@ -1,4 +1,5 @@
 using Domain.Abstractions.Interfaces;
+using Infrastructure.Abstractions.Interfaces;
 using Infrastructure.Commons;
 using Infrastructure.KafkaBroker;
 using Microsoft.Extensions.Configuration;

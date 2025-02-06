@@ -1,4 +1,4 @@
-namespace Domain.Abstractions.Interfaces;
+namespace Infrastructure.Abstractions.Interfaces;
 
 public interface IKafkaProducer
 {

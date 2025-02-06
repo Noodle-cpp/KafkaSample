@@ -1,5 +1,6 @@
 using Confluent.Kafka;
 using Domain.Abstractions.Interfaces;
+using Infrastructure.Abstractions.Interfaces;
 using Newtonsoft.Json;
 
 namespace Infrastructure.KafkaBroker;
