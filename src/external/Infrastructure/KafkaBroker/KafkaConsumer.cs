@@ -1,5 +1,4 @@
 using Confluent.Kafka;
-using Domain.Abstractions.Interfaces;
 using Infrastructure.Abstractions.Interfaces;
 
 namespace Infrastructure.KafkaBroker;

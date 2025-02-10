@@ -1,6 +1,5 @@
 using System.Reflection;
 using DbUp;
-using Domain.Abstractions.Interfaces;
 using LinqToDB;
 using LinqToDB.AspNet;
 using LinqToDB.AspNet.Logging;

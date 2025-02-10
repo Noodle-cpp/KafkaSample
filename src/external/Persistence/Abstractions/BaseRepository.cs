@@ -1,37 +1,43 @@
 using AutoMapper;
+using Domain.Abstractions;
 using Domain.Models;
 using LinqToDB;
-using Microsoft.EntityFrameworkCore;
+using Persistence.Abstractions.Interfaces;
+using Persistence.Extensions;
 
 namespace Persistence.Abstractions;
 
-public abstract class BaseRepository<TEntity, TModel>
+public class BaseRepository<TEntity> : BaseSpecification<TEntity>, IRepository<TEntity>
     where TEntity : class
-    where TModel : class
 {
     private readonly IMapper _mapper;
     private readonly TestDbdb _testDb;
 
-    protected BaseRepository(TestDbdb testDb, IMapper mapper)
+    public BaseRepository(TestDbdb testDb, IMapper mapper)
     {
         _mapper = mapper;
         _testDb = testDb;
     }
-    
-    protected async Task<IEnumerable<TModel>> GetAllAsync()
+
+    public async Task<TEntity?> GetAsync(ISpecification<TEntity> specification)
     {
-        var entities = await AsyncExtensions.ToListAsync(_testDb.GetTable<TEntity>()).ConfigureAwait(false);
-        return _mapper.Map<IEnumerable<TModel>>(entities);
+        var query = from b in _testDb.GetTable<TEntity>()
+                                                            .Specify<TEntity>(specification)
+                                    select b;
+
+        var entity = await query.SingleOrDefaultAsync().ConfigureAwait(false);
+        
+        return entity;
     }
 
-    protected async Task<TModel?> GetByIdAsync(string id)
+    public async Task<IEnumerable<TEntity>> GetListAsync(ISpecification<TEntity> specification)
     {
-        var entity = await AsyncExtensions.FirstOrDefaultAsync(_testDb.GetTable<TEntity>(), x => EF.Property<string>(x, "Id") == id).ConfigureAwait(false);
-        return _mapper.Map<TModel>(entity);
-    }
+        var query = from b in _testDb.GetTable<TEntity>()
+                                                            .Specify<TEntity>(specification)
+                                    select b;
 
-    protected async Task CreateAsync(TEntity entity)
-    {
-        await _testDb.InsertAsync(entity).ConfigureAwait(false);
+        var entity = await query.ToListAsync().ConfigureAwait(false);
+        
+        return entity;
     }
 }

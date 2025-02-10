@@ -1,4 +1,5 @@
 using AutoMapper;
+using Domain.Models;
 
 namespace Persistence.Commons;
 
@@ -7,6 +8,6 @@ public class RepositoryMappingProfile<TEntity, TModel> : Profile where TEntity :
 {
     public RepositoryMappingProfile()
     {
-        CreateMap(typeof(TEntity), typeof(TModel)).ReverseMap();
+        CreateMap<BookModel, Book>().ReverseMap();
     }
 }
