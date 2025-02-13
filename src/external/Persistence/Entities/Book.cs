@@ -10,7 +10,7 @@ using LinqToDB.Mapping;
 #pragma warning disable 1573, 1591
 #nullable enable
 
-namespace Persistence
+namespace Persistence.Entity
 {
 	[Table("Book")]
 	public class Book
@@ -23,7 +23,7 @@ namespace Persistence
 		/// <summary>
 		/// AuthorToBook
 		/// </summary>
-		[Association(ThisKey = nameof(AuthorId), OtherKey = nameof(Persistence.Author.Id))]
+		[Association(ThisKey = nameof(AuthorId), OtherKey = nameof(Entity.Author.Id))]
 		public Author? Author { get; set; }
 		#endregion
 	}

@@ -3,6 +3,7 @@ using Domain.Abstractions;
 using Domain.Models;
 using LinqToDB;
 using Persistence.Abstractions.Interfaces;
+using Persistence.Entity;
 using Persistence.Extensions;
 
 namespace Persistence.Abstractions;

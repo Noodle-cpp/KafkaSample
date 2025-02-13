@@ -14,7 +14,7 @@ using System.Threading.Tasks;
 #pragma warning disable 1573, 1591
 #nullable enable
 
-namespace Persistence
+namespace Persistence.Entity
 {
 	public partial class TestDbdb : DataConnection
 	{

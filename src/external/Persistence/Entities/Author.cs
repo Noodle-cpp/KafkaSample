@@ -12,7 +12,7 @@ using System.Collections.Generic;
 #pragma warning disable 1573, 1591
 #nullable enable
 
-namespace Persistence
+namespace Persistence.Entity
 {
 	[Table("Author")]
 	public class Author

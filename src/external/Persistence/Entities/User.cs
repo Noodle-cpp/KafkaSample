@@ -10,7 +10,7 @@ using LinqToDB.Mapping;
 #pragma warning disable 1573, 1591
 #nullable enable
 
-namespace Persistence
+namespace Persistence.Entity
 {
 	[Table("users")]
 	public class User

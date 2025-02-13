@@ -5,6 +5,7 @@ using LinqToDB.AspNet;
 using LinqToDB.AspNet.Logging;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Persistence.Entity;
 
 namespace Persistence.Extensions;
 

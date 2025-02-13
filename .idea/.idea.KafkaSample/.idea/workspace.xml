@@ -9,24 +9,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="90db5c02-b65b-4042-b718-3a1c9afd4e63" name="Changes" comment="По=ромежкточный коммит с работы">
-      <change afterPath="$PROJECT_DIR$/src/core/Application/Services/BookService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/Domain/Abstractions/BaseSpecification.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/Domain/Abstractions/Interfaces/IRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/Domain/Abstractions/Interfaces/ISpecification.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/external/Persistence/Extensions/LinqToDbSpecificationExtensions.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.KafkaSample/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.KafkaSample/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/Application/Application.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/Application/Application.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/Domain/Abstractions/Interfaces/IBookRepositiry.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/external/Infrastructure/Extensions/AddInfrastructureServiceRegistration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/external/Infrastructure/Extensions/AddInfrastructureServiceRegistration.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/external/Infrastructure/KafkaBroker/KafkaConsumer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/external/Infrastructure/KafkaBroker/KafkaConsumer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/external/Infrastructure/KafkaBroker/KafkaProducer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/external/Infrastructure/KafkaBroker/KafkaProducer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/external/Persistence/Abstractions/BaseRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/external/Persistence/Abstractions/BaseRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/external/Persistence/Abstractions/Specification.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/external/Persistence/Commons/RepositoryMappingProfile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/external/Persistence/Commons/RepositoryMappingProfile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/external/Persistence/Entities/Author.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/external/Persistence/Entities/Author.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/external/Persistence/Entities/Book.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/external/Persistence/Entities/Book.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/external/Persistence/Entities/Schemaversion.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/external/Persistence/Entities/Schemaversion.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/external/Persistence/Entities/TestDbdb.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/external/Persistence/Entities/TestDbdb.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/external/Persistence/Entities/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/external/Persistence/Entities/User.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/external/Persistence/Extensions/AddPersistenceServiceRegistration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/external/Persistence/Extensions/AddPersistenceServiceRegistration.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/external/Persistence/Persistence.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/external/Persistence/Persistence.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/external/Persistence/Repositories/BookRepository.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/presentation/Api/BackgroundServices/KafkaConsumerHostedService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/Api/BackgroundServices/KafkaConsumerHostedService.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,21 +76,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Launch Settings Profile.Api: http.executor": "Debug",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.sourceCode",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Launch Settings Profile.Api: http.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Launch Settings Profile.Api: http">
     <configuration name="Api: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/src/presentation/Api/Api.csproj" />
@@ -147,6 +138,7 @@
       <workItem from="1736834489857" duration="7247000" />
       <workItem from="1738554215450" duration="361000" />
       <workItem from="1738811749774" duration="40462000" />
+      <workItem from="1739420079101" duration="3383000" />
     </task>
     <task id="LOCAL-00001" summary="Определена структура проекта">
       <option name="closed" value="true" />

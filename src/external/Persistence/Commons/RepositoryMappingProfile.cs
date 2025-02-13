@@ -1,5 +1,6 @@
 using AutoMapper;
 using Domain.Models;
+using Persistence.Entity;
 
 namespace Persistence.Commons;
 
