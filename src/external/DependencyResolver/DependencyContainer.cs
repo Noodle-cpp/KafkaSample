@@ -1,4 +1,5 @@
 using Application.Extensions;
+using Domain.Extensions;
 using Infrastructure.Commons;
 using Infrastructure.Extensions;
 using Microsoft.Extensions.Configuration;
@@ -16,6 +17,7 @@ public static class DependencyContainer
         services.AddInfrastructureServices();
         services.AddPersistenceServices(configuration);
         services.AddApplicationServices();
+        services.AddDomainServices();
 
         return services;
     }

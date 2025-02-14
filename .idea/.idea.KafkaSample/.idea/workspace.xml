@@ -8,16 +8,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="90db5c02-b65b-4042-b718-3a1c9afd4e63" name="Changes" comment="По=ромежкточный коммит с работы">
+    <list default="true" id="90db5c02-b65b-4042-b718-3a1c9afd4e63" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.KafkaSample/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.KafkaSample/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/external/Persistence/Abstractions/BaseRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/external/Persistence/Abstractions/BaseRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/external/Persistence/Commons/RepositoryMappingProfile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/external/Persistence/Commons/RepositoryMappingProfile.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/external/Persistence/Entities/Author.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/external/Persistence/Entities/Author.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/external/Persistence/Entities/Book.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/external/Persistence/Entities/Book.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/external/Persistence/Entities/Schemaversion.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/external/Persistence/Entities/Schemaversion.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/external/Persistence/Entities/TestDbdb.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/external/Persistence/Entities/TestDbdb.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/external/Persistence/Entities/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/external/Persistence/Entities/User.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/external/Persistence/Extensions/AddPersistenceServiceRegistration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/external/Persistence/Extensions/AddPersistenceServiceRegistration.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,7 +130,9 @@
       <workItem from="1736834489857" duration="7247000" />
       <workItem from="1738554215450" duration="361000" />
       <workItem from="1738811749774" duration="40462000" />
-      <workItem from="1739420079101" duration="3383000" />
+      <workItem from="1739420079101" duration="4167000" />
+      <workItem from="1739433835990" duration="605000" />
+      <workItem from="1739434508509" duration="1192000" />
     </task>
     <task id="LOCAL-00001" summary="Определена структура проекта">
       <option name="closed" value="true" />
@@ -252,7 +246,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738834734011</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Перегенерировала модели">
+      <option name="closed" value="true" />
+      <created>1739431811185</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1739431811185</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -286,6 +288,7 @@
     <MESSAGE value="Добавлен ReadMe" />
     <MESSAGE value="Исправлено" />
     <MESSAGE value="По=ромежкточный коммит с работы" />
-    <option name="LAST_COMMIT_MESSAGE" value="По=ромежкточный коммит с работы" />
+    <MESSAGE value="Перегенерировала модели" />
+    <option name="LAST_COMMIT_MESSAGE" value="Перегенерировала модели" />
   </component>
 </project>
