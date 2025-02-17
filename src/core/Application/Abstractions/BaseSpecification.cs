@@ -1,7 +1,7 @@
 using System.Linq.Expressions;
-using Persistence.Abstractions.Interfaces;
+using Application.Abstractions.Interfaces;
 
-namespace Domain.Abstractions;
+namespace Application.Abstractions;
 
 public class BaseSpecification<TEntity> : ISpecification<TEntity>
 {

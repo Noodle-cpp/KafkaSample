@@ -8,8 +8,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="90db5c02-b65b-4042-b718-3a1c9afd4e63" name="Changes" comment="">
+    <list default="true" id="90db5c02-b65b-4042-b718-3a1c9afd4e63" name="Changes" comment="Добавлен DI Domain">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.KafkaSample/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.KafkaSample/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/Application/Extensions/AddApplicationServiceRegistration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/Application/Extensions/AddApplicationServiceRegistration.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/Application/Services/BookService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/Application/Services/BookService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/Domain/Abstractions/BaseSpecification.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/Application/Abstractions/BaseSpecification.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/Domain/Abstractions/Interfaces/IRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/Application/Abstractions/Interfaces/IRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/Domain/Abstractions/Interfaces/ISpecification.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/Application/Abstractions/Interfaces/ISpecification.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/external/Persistence/Abstractions/BaseRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/external/Persistence/Abstractions/BaseRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/external/Persistence/Commons/RepositoryMappingProfile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/external/Persistence/Commons/RepositoryMappingProfile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/external/Persistence/Extensions/AddPersistenceServiceRegistration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/external/Persistence/Extensions/AddPersistenceServiceRegistration.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/external/Persistence/Extensions/LinqToDbSpecificationExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/external/Persistence/Extensions/LinqToDbSpecificationExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/external/Persistence/Persistence.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/external/Persistence/Persistence.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +62,11 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0b7856b364e04283a10bb924825b197f28f228/ac/8cfde75f/IDesignTimeDbContextFactory`1.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0e3d5462920846549f6d7044ba86da286ca00/e6/ab1342d5/IConsumer`2.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/Valentine/source/repos/KafkaSample/src/external/Persistence/Abstractions/BaseRepository.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/1b81cb3be224213a6a73519b6e340a628d9a1fb8629c351a186a26f6376669/List.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/3437ef7dc73051855accd6b62fb29b740b17b5220d6da288fefeba3f7a73a57/LambdaExpression.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/7882f8feed2e4690115b82be4988a2fec5d5d1ae9496354552b645081ab1679/DataExtensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/aeae22b1c972504e8888d248c7af57e956db03461ad886a20159e93a0d118f3/ParameterExpression.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/fddd663f895f1deb84b596bca944836d74f3422b3dd46a5085b2f46b981de9/Queryable.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
@@ -68,21 +82,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;.NET Launch Settings Profile.Api: http.executor&quot;: &quot;Debug&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Launch Settings Profile.Api: http.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "XThreadsFramesViewSplitterKey": "0.15294118",
+    "git-widget-placeholder": "master",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.sourceCode",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected=".NET Launch Settings Profile.Api: http">
     <configuration name="Api: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/src/presentation/Api/Api.csproj" />
@@ -133,6 +148,8 @@
       <workItem from="1739420079101" duration="4167000" />
       <workItem from="1739433835990" duration="605000" />
       <workItem from="1739434508509" duration="1192000" />
+      <workItem from="1739503855105" duration="3395000" />
+      <workItem from="1739760389533" duration="16128000" />
     </task>
     <task id="LOCAL-00001" summary="Определена структура проекта">
       <option name="closed" value="true" />
@@ -254,7 +271,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739431811185</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Добавлен DI Domain">
+      <option name="closed" value="true" />
+      <created>1739507628335</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1739507628335</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -289,6 +314,26 @@
     <MESSAGE value="Исправлено" />
     <MESSAGE value="По=ромежкточный коммит с работы" />
     <MESSAGE value="Перегенерировала модели" />
-    <option name="LAST_COMMIT_MESSAGE" value="Перегенерировала модели" />
+    <MESSAGE value="Добавлен DI Domain" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавлен DI Domain" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/src/external/Persistence/Extensions/LinqToDbSpecificationExtensions.cs</url>
+          <line>19</line>
+          <properties documentPath="C:\Users\Valentine\source\repos\KafkaSample\src\external\Persistence\Extensions\LinqToDbSpecificationExtensions.cs" containingFunctionPresentation="Method 'Specify'">
+            <startOffsets>
+              <option value="603" />
+            </startOffsets>
+            <endOffsets>
+              <option value="630" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

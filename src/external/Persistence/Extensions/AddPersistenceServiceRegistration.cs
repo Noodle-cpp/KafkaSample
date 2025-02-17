@@ -1,10 +1,13 @@
 using System.Reflection;
+using Application.Abstractions.Interfaces;
 using DbUp;
+using Domain.Models;
 using LinqToDB;
 using LinqToDB.AspNet;
 using LinqToDB.AspNet.Logging;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Persistence.Abstractions;
 using Persistence.Entity;
 
 namespace Persistence.Extensions;
@@ -22,7 +25,9 @@ public static class AddPersistenceServiceRegistration
             => options.UsePostgreSQL(dbConfiguration).UseDefaultLogging(provider));
         
         services.AddAutoMapper(Assembly.GetExecutingAssembly());
-
+        
+        AddRepositories(services);
+        
         return services;
     }
 
@@ -54,5 +59,10 @@ public static class AddPersistenceServiceRegistration
         Console.ForegroundColor = ConsoleColor.Green;
         Console.WriteLine("Миграции успешно применены!");
         Console.ResetColor();
+    }
+
+    private static void AddRepositories(IServiceCollection services)
+    {
+        services.AddScoped<IRepository<BookModel>, BaseRepository<BookModel, Book>>();
     }
 }
