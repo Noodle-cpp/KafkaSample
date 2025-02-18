@@ -10,13 +10,11 @@
   <component name="ChangeListManager">
     <list default="true" id="90db5c02-b65b-4042-b718-3a1c9afd4e63" name="Changes" comment="Добавлен DI Domain">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.KafkaSample/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.KafkaSample/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/Application/Extensions/AddApplicationServiceRegistration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/Application/Extensions/AddApplicationServiceRegistration.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/Application/Abstractions/BaseSpecification.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/Application/Abstractions/Interfaces/ISpecification.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/Application/Abstractions/Interfaces/ISpecification.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/core/Application/Services/BookService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/Application/Services/BookService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/Domain/Abstractions/BaseSpecification.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/Application/Abstractions/BaseSpecification.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/Domain/Abstractions/Interfaces/IRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/Application/Abstractions/Interfaces/IRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/Domain/Abstractions/Interfaces/ISpecification.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/Application/Abstractions/Interfaces/ISpecification.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/external/Persistence/Abstractions/BaseRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/external/Persistence/Abstractions/BaseRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/external/Persistence/Commons/RepositoryMappingProfile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/external/Persistence/Commons/RepositoryMappingProfile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/external/Persistence/Commons/RepositoryMappingProfile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/external/Persistence/Commons/PersistenceMappingProfile.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/external/Persistence/Extensions/AddPersistenceServiceRegistration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/external/Persistence/Extensions/AddPersistenceServiceRegistration.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/external/Persistence/Extensions/LinqToDbSpecificationExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/external/Persistence/Extensions/LinqToDbSpecificationExtensions.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/external/Persistence/Persistence.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/external/Persistence/Persistence.csproj" afterDir="false" />
@@ -65,7 +63,10 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/1b81cb3be224213a6a73519b6e340a628d9a1fb8629c351a186a26f6376669/List.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/3437ef7dc73051855accd6b62fb29b740b17b5220d6da288fefeba3f7a73a57/LambdaExpression.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/7882f8feed2e4690115b82be4988a2fec5d5d1ae9496354552b645081ab1679/DataExtensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/a01438ba566562f50e41665fc39d16b767aa0649122f35b3ed84cc8957d17/Where.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/aeae22b1c972504e8888d248c7af57e956db03461ad886a20159e93a0d118f3/ParameterExpression.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/ce37be1a06b16c6faa02038d2cc477dd3bca5b217ceeb41c5f2ad45c1bf9/ServiceProvider.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/d1ca46afd44b3a75bd9150bb2def9c49c2a81a14e7466cd956ec81e445b775/TableT.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/fddd663f895f1deb84b596bca944836d74f3422b3dd46a5085b2f46b981de9/Queryable.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="KubernetesApiPersistence">{}</component>
@@ -316,24 +317,5 @@
     <MESSAGE value="Перегенерировала модели" />
     <MESSAGE value="Добавлен DI Domain" />
     <option name="LAST_COMMIT_MESSAGE" value="Добавлен DI Domain" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/src/external/Persistence/Extensions/LinqToDbSpecificationExtensions.cs</url>
-          <line>19</line>
-          <properties documentPath="C:\Users\Valentine\source\repos\KafkaSample\src\external\Persistence\Extensions\LinqToDbSpecificationExtensions.cs" containingFunctionPresentation="Method 'Specify'">
-            <startOffsets>
-              <option value="603" />
-            </startOffsets>
-            <endOffsets>
-              <option value="630" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

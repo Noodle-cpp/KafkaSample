@@ -9,16 +9,10 @@ public static class LinqToDbSpecificationExtensions
         where TEntity : class
     {
         ArgumentNullException.ThrowIfNull(specification);
-        //
-        // foreach (var with in specification.LoadWithExpressions)
-        // {
-        //     query = query.LoadWith(with);
-        // }
-
-        foreach (var where in specification.WhereExpressions)
-        {
-            query = query.Where(where);
-        }
+        
+        var result = specification.LoadWithExpressions.Aggregate(query, (current, with) => current.LoadWith(with));
+        result = specification.WhereExpressions.Aggregate(result, (current, where) => current.Where(where));
+        
         //
         // if (specification.OrderByExpressions.Count != 0)
         // {
@@ -49,6 +43,6 @@ public static class LinqToDbSpecificationExtensions
         // var skip = (specification.Page.Value - 1) * specification.CountOnPage.Value;
         // query = query.Skip(skip).Take(specification.CountOnPage.Value);
 
-        return query;
+        return result;
     }
 }

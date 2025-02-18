@@ -2,18 +2,21 @@ using System.Linq.Expressions;
 
 namespace Application.Abstractions.Interfaces;
 
-public interface ISpecification<TEntity>
+public interface ISpecification<TModel>
 {
-    List<Expression<Func<TEntity, bool>>> WhereExpressions { get; }
-    List<Expression<Func<TEntity, object>>> OrderByExpressions { get; }
-    List<Expression<Func<TEntity, object>>> OrderByDescExpressions { get; }
-    List<Expression<Func<TEntity, object>>> LoadWithExpressions{ get; }
+    List<Expression<Func<TModel, bool>>> WhereExpressions { get; }
+    List<Expression<Func<TModel, object>>> LoadWithExpressions{ get; }
+    List<Expression<Func<TModel, object>>> OrderByExpressions { get; }
+    List<Expression<Func<TModel, object>>> OrderByDescExpressions { get; }
 
-    void Where(Expression<Func<TEntity, bool>> exp);
-    void OrderBy(Expression<Func<TEntity, object>> exp);
-    void OrderByDesc(Expression<Func<TEntity, object>> exp);
-    void LoadWith(Expression<Func<TEntity, object>> exp);
-    
+    void AddWhere(Expression<Func<TModel, bool>> expression);
+    void AddLoadWith(Expression<Func<TModel, object>> expression);
+
+    void AddWhere(IEnumerable<Expression<Func<TModel, bool>>> expressions);
+    void AddLoadWith(IEnumerable<Expression<Func<TModel, object>>> expressions);
+    void OrderBy(Expression<Func<TModel, object>> exp);
+    void OrderByDesc(Expression<Func<TModel, object>> exp);
+
     int? Page { get; set; }
     int? CountOnPage { get; set; }
 }

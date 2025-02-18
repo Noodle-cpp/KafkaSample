@@ -1,6 +1,8 @@
+using System.Linq.Expressions;
 using Application.Abstractions;
 using Application.Abstractions.Interfaces;
 using AutoMapper;
+using AutoMapper.Extensions.ExpressionMapping;
 using Domain.Models;
 using LinqToDB;
 using Persistence.Entity;
@@ -23,9 +25,9 @@ public class BaseRepository<TModel, TEntity> : BaseSpecification<TModel>, IRepos
 
     public async Task<TModel?> GetAsync(ISpecification<TModel> specification)
     {
-        var entitySpecification = _mapper.Map<BaseSpecification<TEntity>>(specification);
-
-        var query = _testDb.GetTable<TEntity>().Specify(entitySpecification);
+        var spec = MapToEntitySpecification(specification);
+        
+        var query = _testDb.GetTable<TEntity>().Specify(spec);;
         
         var entity = await query.SingleOrDefaultAsync().ConfigureAwait(false);
         
@@ -34,12 +36,22 @@ public class BaseRepository<TModel, TEntity> : BaseSpecification<TModel>, IRepos
 
     public async Task<IEnumerable<TModel>> GetListAsync(ISpecification<TModel> specification)
     {
-        var entitySpecification = _mapper.Map<BaseSpecification<TEntity>>(specification);
-
-        var query = _testDb.GetTable<TEntity>().Specify(entitySpecification);
-
+        var spec = MapToEntitySpecification(specification);
+        
+        var query = _testDb.GetTable<TEntity>().Specify(spec);
+        
         var entity = await query.ToListAsync().ConfigureAwait(false);
         
         return _mapper.Map<IEnumerable<TModel>>(entity);
+    }
+
+    private ISpecification<TEntity> MapToEntitySpecification(ISpecification<TModel> specification)
+    {
+        var newSpec = new BaseSpecification<TEntity>();
+        
+        newSpec.AddWhere(specification.WhereExpressions.Select(s => _mapper.MapExpression<Expression<Func<TEntity, bool>>>(s)));
+        newSpec.AddLoadWith(expressions: specification.LoadWithExpressions.Select(s => _mapper.MapExpression<Expression<Func<TEntity, object>>>(s)));
+        
+        return newSpec;
     }
 }

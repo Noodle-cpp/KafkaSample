@@ -14,29 +14,28 @@ public interface IBookService
 public class BookService : IBookService
 {
     private readonly IRepository<BookModel> _repository;
+    private readonly ISpecification<BookModel> _specification;
     
-    public BookService(IRepository<BookModel> repository)
+    public BookService(IRepository<BookModel> repository, ISpecification<BookModel> specification)
     {
         _repository = repository;
+        _specification = specification;
     }
 
     public async Task<BookModel?> GetBookByIdAsync(string id)
     {
-        var spec = new BaseSpecification<BookModel>();
-        spec.Where(b => b.Id == id);
-        spec.LoadWith(b => b.Author);
+        _specification.AddWhere(x => x.Id == id);
+        _specification.AddLoadWith(x => x.Author);
         
-        var book = await _repository.GetAsync(spec).ConfigureAwait(false);
+        var book = await _repository.GetAsync(_specification).ConfigureAwait(false);
         return book;
     }
 
     public async Task<IEnumerable<BookModel>> GetBooksAsync()
     {
-        var spec = new BaseSpecification<BookModel>();
-        spec.OrderBy(b => b.Title);
-        spec.LoadWith(b => b.Author);
+        _specification.AddLoadWith(x => x.Author);
         
-        var book = await _repository.GetListAsync(spec).ConfigureAwait(false);
+        var book = await _repository.GetListAsync(_specification).ConfigureAwait(false);
         return book;
     }
 }

@@ -1,5 +1,6 @@
 using System.Reflection;
 using Application.Abstractions.Interfaces;
+using AutoMapper.Extensions.ExpressionMapping;
 using DbUp;
 using Domain.Models;
 using LinqToDB;
@@ -8,6 +9,7 @@ using LinqToDB.AspNet.Logging;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Persistence.Abstractions;
+using Persistence.Commons;
 using Persistence.Entity;
 
 namespace Persistence.Extensions;
@@ -23,8 +25,12 @@ public static class AddPersistenceServiceRegistration
 
         services.AddLinqToDBContext<TestDbdb>((provider, options)
             => options.UsePostgreSQL(dbConfiguration).UseDefaultLogging(provider));
-        
-        services.AddAutoMapper(Assembly.GetExecutingAssembly());
+
+        services.AddAutoMapper(cfg =>
+        {
+            cfg.AddExpressionMapping();
+            cfg.AllowNullCollections = true;
+        }, typeof(PersistenceMappingProfile));
         
         AddRepositories(services);
         
@@ -64,5 +70,7 @@ public static class AddPersistenceServiceRegistration
     private static void AddRepositories(IServiceCollection services)
     {
         services.AddScoped<IRepository<BookModel>, BaseRepository<BookModel, Book>>();
+        services.AddScoped<ISpecification<BookModel>, BaseSpecification<BookModel>>();
+        services.AddScoped<ISpecification<Book>, BaseSpecification<Book>>();
     }
 }
