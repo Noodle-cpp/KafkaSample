@@ -1,5 +1,5 @@
 using Application.Services;
-using Domain.Models;
+using Domain.Abstractions.Interfaces;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace Application.Extensions;

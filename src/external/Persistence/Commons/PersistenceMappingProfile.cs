@@ -1,6 +1,4 @@
 using System.Linq.Expressions;
-using Application.Abstractions;
-using Application.Abstractions.Interfaces;
 using AutoMapper;
 using Domain.Models;
 using Persistence.Abstractions;

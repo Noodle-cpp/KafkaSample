@@ -8,14 +8,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="90db5c02-b65b-4042-b718-3a1c9afd4e63" name="Changes" comment="Закомментирована кафка">
+    <list default="true" id="90db5c02-b65b-4042-b718-3a1c9afd4e63" name="Changes" comment="Добавлены остальные спецификации">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.KafkaSample/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.KafkaSample/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/Application/Abstractions/Interfaces/ISpecification.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/Application/Abstractions/Interfaces/ISpecification.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/Application/Services/BookService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/Application/Services/BookService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/external/Persistence/Abstractions/BaseRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/external/Persistence/Abstractions/BaseRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/external/Persistence/Abstractions/BaseSpecification.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/external/Persistence/Abstractions/BaseSpecification.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/external/Persistence/Extensions/LinqToDbSpecificationExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/external/Persistence/Extensions/LinqToDbSpecificationExtensions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/presentation/Api/Controllers/BooksController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/Api/Controllers/BooksController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -296,7 +290,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739865869446</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Добавлены остальные спецификации">
+      <option name="closed" value="true" />
+      <created>1739867705733</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1739867705733</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -334,25 +336,7 @@
     <MESSAGE value="Добавлен DI Domain" />
     <MESSAGE value="Добавлены базовые спецификации&#10;Обновлен AutoMapper в Persistence до последней версии" />
     <MESSAGE value="Закомментирована кафка" />
-    <option name="LAST_COMMIT_MESSAGE" value="Закомментирована кафка" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/src/external/Persistence/Extensions/LinqToDbSpecificationExtensions.cs</url>
-          <line>13</line>
-          <properties documentPath="C:\Users\Valentine\source\repos\KafkaSample\src\external\Persistence\Extensions\LinqToDbSpecificationExtensions.cs" containingFunctionPresentation="Method 'Specify'">
-            <startOffsets>
-              <option value="502" />
-            </startOffsets>
-            <endOffsets>
-              <option value="602" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="40" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Добавлены остальные спецификации" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавлены остальные спецификации" />
   </component>
 </project>

@@ -1,15 +1,9 @@
 using Application.Abstractions;
 using Application.Abstractions.Interfaces;
+using Domain.Abstractions.Interfaces;
 using Domain.Models;
 
 namespace Application.Services;
-
-//TODO: Перенести интерфейс
-public interface IBookService
-{
-    public Task<BookModel?> GetBookByIdAsync(string id);
-    public Task<IEnumerable<BookModel>> GetBooksAsync(int page, int countOnPage);
-}
 
 public class BookService : IBookService
 {
