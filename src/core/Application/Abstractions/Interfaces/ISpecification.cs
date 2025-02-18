@@ -14,8 +14,10 @@ public interface ISpecification<TModel>
 
     void AddWhere(IEnumerable<Expression<Func<TModel, bool>>> expressions);
     void AddLoadWith(IEnumerable<Expression<Func<TModel, object>>> expressions);
-    void OrderBy(Expression<Func<TModel, object>> exp);
-    void OrderByDesc(Expression<Func<TModel, object>> exp);
+    void AddOrderBy(Expression<Func<TModel, object>> expression);
+    void AddOrderByDesc(Expression<Func<TModel, object>> expression);
+    void AddOrderBy(IEnumerable<Expression<Func<TModel, object>>> expressions);
+    void AddOrderByDesc(IEnumerable<Expression<Func<TModel, object>>> expressions);
 
     int? Page { get; set; }
     int? CountOnPage { get; set; }

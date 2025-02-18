@@ -50,7 +50,11 @@ public class BaseRepository<TModel, TEntity> : BaseSpecification<TModel>, IRepos
         var newSpec = new BaseSpecification<TEntity>();
         
         newSpec.AddWhere(specification.WhereExpressions.Select(s => _mapper.MapExpression<Expression<Func<TEntity, bool>>>(s)));
-        newSpec.AddLoadWith(expressions: specification.LoadWithExpressions.Select(s => _mapper.MapExpression<Expression<Func<TEntity, object>>>(s)));
+        newSpec.AddLoadWith(specification.LoadWithExpressions.Select(s => _mapper.MapExpression<Expression<Func<TEntity, object>>>(s)));
+        newSpec.AddOrderBy(specification.OrderByExpressions.Select(s => _mapper.MapExpression<Expression<Func<TEntity, object>>>(s)));
+        newSpec.AddOrderByDesc(specification.OrderByDescExpressions.Select(s => _mapper.MapExpression<Expression<Func<TEntity, object>>>(s)));
+        newSpec.Page = specification.Page;
+        newSpec.CountOnPage = specification.CountOnPage;
         
         return newSpec;
     }

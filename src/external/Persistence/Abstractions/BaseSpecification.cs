@@ -8,10 +8,12 @@ namespace Persistence.Abstractions;
 public class BaseSpecification<TModel> : ISpecification<TModel>
 where TModel : class
 {
+    public int? Page { get; set; }
+    public int? CountOnPage { get; set; }
     public List<Expression<Func<TModel, bool>>> WhereExpressions { get; } = [];
     public List<Expression<Func<TModel, object>>> LoadWithExpressions { get; } = [];
-    public List<Expression<Func<TModel, object>>> OrderByExpressions { get; }
-    public List<Expression<Func<TModel, object>>> OrderByDescExpressions { get; }
+    public List<Expression<Func<TModel, object>>> OrderByExpressions { get; } = [];
+    public List<Expression<Func<TModel, object>>> OrderByDescExpressions { get; } = [];
 
     public void AddWhere(Expression<Func<TModel, bool>> expression)
     {
@@ -33,16 +35,23 @@ where TModel : class
         LoadWithExpressions.AddRange(expressions);
     }
 
-    public void OrderBy(Expression<Func<TModel, object>> exp)
+    public void AddOrderBy(Expression<Func<TModel, object>> expression)
     {
-        throw new NotImplementedException();
+        OrderByExpressions.Add(expression);
     }
 
-    public void OrderByDesc(Expression<Func<TModel, object>> exp)
+    public void AddOrderByDesc(Expression<Func<TModel, object>> expression)
     {
-        throw new NotImplementedException();
+        OrderByDescExpressions.Add(expression);
     }
 
-    public int? Page { get; set; }
-    public int? CountOnPage { get; set; }
+    public void AddOrderBy(IEnumerable<Expression<Func<TModel, object>>> expressions)
+    {
+        OrderByExpressions.AddRange(expressions);
+    }
+
+    public void AddOrderByDesc(IEnumerable<Expression<Func<TModel, object>>> expressions)
+    {
+        OrderByDescExpressions.AddRange(expressions);
+    }
 }

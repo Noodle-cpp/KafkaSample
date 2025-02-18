@@ -8,7 +8,7 @@ namespace Application.Services;
 public interface IBookService
 {
     public Task<BookModel?> GetBookByIdAsync(string id);
-    public Task<IEnumerable<BookModel>> GetBooksAsync();
+    public Task<IEnumerable<BookModel>> GetBooksAsync(int page, int countOnPage);
 }
 
 public class BookService : IBookService
@@ -31,9 +31,12 @@ public class BookService : IBookService
         return book;
     }
 
-    public async Task<IEnumerable<BookModel>> GetBooksAsync()
+    public async Task<IEnumerable<BookModel>> GetBooksAsync(int page, int countOnPage)
     {
         _specification.AddLoadWith(x => x.Author);
+        _specification.AddOrderBy(x => x.Title);
+        _specification.Page = page;
+        _specification.CountOnPage = countOnPage;
         
         var book = await _repository.GetListAsync(_specification).ConfigureAwait(false);
         return book;
