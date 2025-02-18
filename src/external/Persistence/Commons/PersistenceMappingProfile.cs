@@ -14,6 +14,5 @@ public class PersistenceMappingProfile : Profile
         CreateMap<AuthorModel, Author>().ReverseMap();
         
         CreateMap<Expression<Func<BookModel, bool>>, Expression<Func<Book, bool>>>();
-        CreateMap<BaseSpecification<BookModel>, BaseSpecification<Book>>();
     }
 }

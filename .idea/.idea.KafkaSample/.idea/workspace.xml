@@ -8,9 +8,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="90db5c02-b65b-4042-b718-3a1c9afd4e63" name="Changes" comment="Добавлены остальные спецификации">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.KafkaSample/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.KafkaSample/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="90db5c02-b65b-4042-b718-3a1c9afd4e63" name="Changes" comment="Перенесла интерфейс BookService, но не уверена, что парвильно" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -298,7 +296,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739867705733</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Перенесла интерфейс BookService, но не уверена, что парвильно">
+      <option name="closed" value="true" />
+      <created>1739870969655</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1739870969655</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -337,6 +343,7 @@
     <MESSAGE value="Добавлены базовые спецификации&#10;Обновлен AutoMapper в Persistence до последней версии" />
     <MESSAGE value="Закомментирована кафка" />
     <MESSAGE value="Добавлены остальные спецификации" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавлены остальные спецификации" />
+    <MESSAGE value="Перенесла интерфейс BookService, но не уверена, что парвильно" />
+    <option name="LAST_COMMIT_MESSAGE" value="Перенесла интерфейс BookService, но не уверена, что парвильно" />
   </component>
 </project>
