@@ -1,5 +1,6 @@
 using Application.Abstractions;
 using Application.Abstractions.Interfaces;
+using Application.Exceptions;
 using Domain.Abstractions.Interfaces;
 using Domain.Models;
 
@@ -22,6 +23,9 @@ public class BookService : IBookService
         _specification.AddLoadWith(x => x.Author);
         
         var book = await _repository.GetAsync(_specification).ConfigureAwait(false);
+
+        if (book is null) throw new BookNotFoundException("Книга не найдена");
+        
         return book;
     }
 

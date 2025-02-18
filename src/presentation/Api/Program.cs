@@ -1,4 +1,5 @@
 using Api.BackgroundServices;
+using Api.Commons;
 using DependencyResolver;
 using Infrastructure.Commons;
 
@@ -14,6 +15,8 @@ builder.Services.AddControllers();
 builder.Services.AddOpenApi();
 builder.Services.RegisterDependencies(builder.Configuration);
 builder.Services.AddSwaggerGen();
+
+builder.Services.AddAutoMapper(typeof(ApiMappingProfile));
 
 // builder.Services.Configure<HostOptions>(hostOptions =>
 //         {
