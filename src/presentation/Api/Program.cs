@@ -15,11 +15,11 @@ builder.Services.AddOpenApi();
 builder.Services.RegisterDependencies(builder.Configuration);
 builder.Services.AddSwaggerGen();
 
-builder.Services.Configure<HostOptions>(hostOptions =>
-        {
-            hostOptions.BackgroundServiceExceptionBehavior = BackgroundServiceExceptionBehavior.Ignore;
-        })
-    .AddHostedService<KafkaConsumerHostedService>();
+// builder.Services.Configure<HostOptions>(hostOptions =>
+//         {
+//             hostOptions.BackgroundServiceExceptionBehavior = BackgroundServiceExceptionBehavior.Ignore;
+//         })
+//     .AddHostedService<KafkaConsumerHostedService>();
 
 builder.Services.AddCors(options =>
 {

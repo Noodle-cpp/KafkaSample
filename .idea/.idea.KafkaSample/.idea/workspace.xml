@@ -8,17 +8,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="90db5c02-b65b-4042-b718-3a1c9afd4e63" name="Changes" comment="Добавлен DI Domain">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.KafkaSample/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.KafkaSample/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/Application/Abstractions/BaseSpecification.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/Application/Abstractions/Interfaces/ISpecification.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/Application/Abstractions/Interfaces/ISpecification.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/Application/Services/BookService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/Application/Services/BookService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/external/Persistence/Abstractions/BaseRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/external/Persistence/Abstractions/BaseRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/external/Persistence/Commons/RepositoryMappingProfile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/external/Persistence/Commons/PersistenceMappingProfile.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/external/Persistence/Extensions/AddPersistenceServiceRegistration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/external/Persistence/Extensions/AddPersistenceServiceRegistration.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/external/Persistence/Extensions/LinqToDbSpecificationExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/external/Persistence/Extensions/LinqToDbSpecificationExtensions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/external/Persistence/Persistence.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/external/Persistence/Persistence.csproj" afterDir="false" />
-    </list>
+    <list default="true" id="90db5c02-b65b-4042-b718-3a1c9afd4e63" name="Changes" comment="Добавлены базовые спецификации&#10;Обновлен AutoMapper в Persistence до последней версии" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -68,6 +58,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/ce37be1a06b16c6faa02038d2cc477dd3bca5b217ceeb41c5f2ad45c1bf9/ServiceProvider.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/d1ca46afd44b3a75bd9150bb2def9c49c2a81a14e7466cd956ec81e445b775/TableT.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/fddd663f895f1deb84b596bca944836d74f3422b3dd46a5085b2f46b981de9/Queryable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Valentine/source/repos/KafkaSample/src/external/Persistence/Extensions/AddPersistenceServiceRegistration.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
@@ -280,7 +271,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739507628335</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Добавлены базовые спецификации&#10;Обновлен AutoMapper в Persistence до последней версии">
+      <option name="closed" value="true" />
+      <created>1739865527157</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1739865527157</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -316,6 +315,7 @@
     <MESSAGE value="По=ромежкточный коммит с работы" />
     <MESSAGE value="Перегенерировала модели" />
     <MESSAGE value="Добавлен DI Domain" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавлен DI Domain" />
+    <MESSAGE value="Добавлены базовые спецификации&#10;Обновлен AutoMapper в Persistence до последней версии" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавлены базовые спецификации&#10;Обновлен AutoMapper в Persistence до последней версии" />
   </component>
 </project>
