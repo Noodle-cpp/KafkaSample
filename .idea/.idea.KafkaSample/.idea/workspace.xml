@@ -8,16 +8,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="90db5c02-b65b-4042-b718-3a1c9afd4e63" name="Changes" comment="Убрала из профайла маппинга BaseSpecification">
-      <change afterPath="$PROJECT_DIR$/src/presentation/Api/Commons/ApiMappingProfile.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/presentation/Api/ViewModels/Responses/AuthorResponse.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/presentation/Api/ViewModels/Responses/BookResponse.cs" afterDir="false" />
+    <list default="true" id="90db5c02-b65b-4042-b718-3a1c9afd4e63" name="Changes" comment="Добавлен маппер в API&#10;Добавлены модели ответов в контроллеры&#10;Добавлены комментарии swagger">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.KafkaSample/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.KafkaSample/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/Application/Services/BookService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/Application/Services/BookService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/Domain/Models/AuthorModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/Domain/Models/AuthorModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/presentation/Api/Api.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/Api/Api.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/presentation/Api/Controllers/BooksController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/Api/Controllers/BooksController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/presentation/Api/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/Api/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -324,7 +316,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739871092641</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Добавлен маппер в API&#10;Добавлены модели ответов в контроллеры&#10;Добавлены комментарии swagger">
+      <option name="closed" value="true" />
+      <created>1739872245719</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1739872245719</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -365,6 +365,7 @@
     <MESSAGE value="Добавлены остальные спецификации" />
     <MESSAGE value="Перенесла интерфейс BookService, но не уверена, что парвильно" />
     <MESSAGE value="Убрала из профайла маппинга BaseSpecification" />
-    <option name="LAST_COMMIT_MESSAGE" value="Убрала из профайла маппинга BaseSpecification" />
+    <MESSAGE value="Добавлен маппер в API&#10;Добавлены модели ответов в контроллеры&#10;Добавлены комментарии swagger" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавлен маппер в API&#10;Добавлены модели ответов в контроллеры&#10;Добавлены комментарии swagger" />
   </component>
 </project>
