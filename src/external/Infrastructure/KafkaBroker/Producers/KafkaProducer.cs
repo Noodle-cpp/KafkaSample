@@ -1,8 +1,8 @@
+using Application.Abstractions.Interfaces;
 using Confluent.Kafka;
-using Infrastructure.Abstractions.Interfaces;
 using Newtonsoft.Json;
 
-namespace Infrastructure.KafkaBroker;
+namespace Infrastructure.KafkaBroker.Producers;
 
 public class KafkaProducer : IKafkaProducer, IDisposable
 {

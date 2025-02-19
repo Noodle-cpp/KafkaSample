@@ -1,6 +1,8 @@
-using Infrastructure.Abstractions.Interfaces;
+using Application.Abstractions.Interfaces;
 using Infrastructure.Commons;
 using Infrastructure.KafkaBroker;
+using Infrastructure.KafkaBroker.Consumers;
+using Infrastructure.KafkaBroker.Producers;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;

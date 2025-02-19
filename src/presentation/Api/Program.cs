@@ -25,11 +25,11 @@ builder.Services.AddSwaggerGen(options =>
 
 builder.Services.AddAutoMapper(typeof(ApiMappingProfile));
 
-// builder.Services.Configure<HostOptions>(hostOptions =>
-//         {
-//             hostOptions.BackgroundServiceExceptionBehavior = BackgroundServiceExceptionBehavior.Ignore;
-//         })
-//     .AddHostedService<KafkaConsumerHostedService>();
+builder.Services.Configure<HostOptions>(hostOptions =>
+        {
+            hostOptions.BackgroundServiceExceptionBehavior = BackgroundServiceExceptionBehavior.Ignore;
+        })
+    .AddHostedService<KafkaConsumerHostedService>();
 
 builder.Services.AddCors(options =>
 {

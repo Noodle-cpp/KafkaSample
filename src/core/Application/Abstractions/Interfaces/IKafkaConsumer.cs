@@ -1,4 +1,4 @@
-namespace Infrastructure.Abstractions.Interfaces;
+namespace Application.Abstractions.Interfaces;
 
 public interface IKafkaConsumer
 {

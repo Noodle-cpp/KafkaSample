@@ -1,5 +1,5 @@
+using Application.Abstractions.Interfaces;
 using Confluent.Kafka;
-using Infrastructure.Abstractions.Interfaces;
 
 namespace Api.BackgroundServices;
 

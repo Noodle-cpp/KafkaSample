@@ -8,8 +8,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="90db5c02-b65b-4042-b718-3a1c9afd4e63" name="Changes" comment="Добавлен маппер в API&#10;Добавлены модели ответов в контроллеры&#10;Добавлены комментарии swagger">
+    <list default="true" id="90db5c02-b65b-4042-b718-3a1c9afd4e63" name="Changes" comment="Добавила создание документации swagger по комментариям контроллера">
+      <change afterPath="$PROJECT_DIR$/src/presentation/Api/ViewModels/Requests/KafkaTestRequest.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.KafkaSample/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.KafkaSample/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/external/Infrastructure/Abstractions/Interfaces/IKafkaConsumer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/Application/Abstractions/Interfaces/IKafkaConsumer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/external/Infrastructure/Abstractions/Interfaces/IKafkaProducer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/Application/Abstractions/Interfaces/IKafkaProducer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/external/Infrastructure/KafkaBroker/KafkaConsumer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/external/Infrastructure/KafkaBroker/Consumers/KafkaConsumer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/external/Infrastructure/KafkaBroker/KafkaProducer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/external/Infrastructure/KafkaBroker/Producers/KafkaProducer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentation/Api/Api.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/Api/Api.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentation/Api/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/Api/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -324,7 +331,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739872245719</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Добавила создание документации swagger по комментариям контроллера">
+      <option name="closed" value="true" />
+      <created>1739930068999</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1739930069000</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -366,6 +381,7 @@
     <MESSAGE value="Перенесла интерфейс BookService, но не уверена, что парвильно" />
     <MESSAGE value="Убрала из профайла маппинга BaseSpecification" />
     <MESSAGE value="Добавлен маппер в API&#10;Добавлены модели ответов в контроллеры&#10;Добавлены комментарии swagger" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавлен маппер в API&#10;Добавлены модели ответов в контроллеры&#10;Добавлены комментарии swagger" />
+    <MESSAGE value="Добавила создание документации swagger по комментариям контроллера" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавила создание документации swagger по комментариям контроллера" />
   </component>
 </project>

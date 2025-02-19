@@ -1,7 +1,7 @@
+using Application.Abstractions.Interfaces;
 using Confluent.Kafka;
-using Infrastructure.Abstractions.Interfaces;
 
-namespace Infrastructure.KafkaBroker;
+namespace Infrastructure.KafkaBroker.Consumers;
 
 public class KafkaConsumer : IKafkaConsumer, IDisposable
 {
